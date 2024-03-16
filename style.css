@@ -17,3 +17,35 @@
 /* <----------------------------------------> */
 /* <--********** Set Defaults ************--> */
 /* <----------------------------------------> */
+
+body {
+  background-color: rgb(50, 50, 50);
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(225, 225, 225);
+  padding: 8rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+input,
+textarea,
+button {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+input {
+  display: block;
+  width: 20rem;
+  height: 2rem;
+  padding: 1.25rem 0.5rem;
+}
+
+button {
+  display: block;
+  padding: 0.25rem 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
