@@ -25,27 +25,109 @@ body {
   padding: 8rem;
 }
 
+section {
+  background-color: rgb(65, 65, 65);
+  width: 35rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: 1px 1px 2px rgb(68, 68, 68);
+}
+
 h1 {
   margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 3rem 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 input,
 textarea,
-button {
-  margin: 1rem 0;
+button,
+select {
+  margin: 0.5rem 0 2rem 0;
+  font: inherit;
   font-size: 1.5rem;
 }
 
-input {
+label {
+  font-size: 1.4rem;
+}
+
+input,
+textarea,
+select {
   display: block;
-  width: 20rem;
-  height: 2rem;
-  padding: 1.25rem 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background-color: rgb(75, 75, 75);
+  color: rgb(230, 230, 230);
+}
+
+input:focus {
+  background-color: rgb(230, 230, 230);
+  color: rgb(50, 50, 50);
 }
 
 button {
   display: block;
-  padding: 0.25rem 0.75rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  font-weight: 700;
+  color: rgb(220, 220, 220);
+  background-color: rgb(64, 64, 64);
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 150ms ease-out;
+  -webkit-transition: background-color 150ms ease-out;
+  -moz-transition: background-color 150ms ease-out;
+  -ms-transition: background-color 150ms ease-out;
+  -o-transition: background-color 150ms ease-out;
+}
+
+button:hover {
+  color: rgb(64, 64, 64);
+  background-color: rgb(220, 220, 220);
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-inline input {
+  width: auto;
+  margin: 0 1rem 0 0;
+}
+
+.form-inline label {
+  font-size: 1.25rem;
+}
+
+.form-inline:nth-of-type(4) {
+  margin-top: 1rem;
+}
+
+.form-inline:nth-of-type(6) {
+  margin: 1rem 0 2rem 0;
 }
