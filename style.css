@@ -21,21 +21,21 @@
 body {
   background-color: rgb(50, 50, 50);
   font-family: 'Montserrat', sans-serif;
-  color: rgb(225, 225, 225);
-  padding: 8rem;
+  color: rgb(240, 240, 240);
+  padding: 4rem 8rem;
 }
 
 main,
 h1 {
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(55, 55, 55);
   width: 35rem;
   padding: 2rem;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-  box-shadow: 1px 1px 2px rgb(68, 68, 68);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  box-shadow: 0 0 4px rgba(144, 144, 144, 0.5);
 }
 
 ul {
@@ -52,7 +52,7 @@ h1 {
 h2 {
   margin: 2rem 0 1rem 0;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   color: rgb(240, 240, 240);
 }
 
@@ -81,13 +81,17 @@ select {
   padding: 0.5rem;
   font: inherit;
   font-weight: 500;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
   background-color: rgb(75, 75, 75);
   color: rgb(230, 230, 230);
+}
+
+textarea {
+  resize: vertical;
 }
 
 input:focus {
@@ -95,19 +99,26 @@ input:focus {
   color: rgb(50, 50, 50);
 }
 
+.required {
+  color: rgb(244, 29, 76);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 button {
   display: block;
   width: 100%;
   padding: 0.9rem 1.2rem;
+  margin: 2rem 0 1rem 0;
   font-weight: 700;
   color: rgb(220, 220, 220);
   background-color: rgb(64, 64, 64);
   border: 2px solid rgb(220, 220, 220);
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
   cursor: pointer;
   transition: background-color 150ms ease-out;
   -webkit-transition: background-color 150ms ease-out;
