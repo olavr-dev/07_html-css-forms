@@ -26,7 +26,7 @@
             <li>
               <label for="phone">Your Phone Number</label>
               <input
-                type="number"
+                type="tel"
                 name="phone"
                 id="phone"
                 required
@@ -42,6 +42,7 @@
                 rows="8"
                 required
                 minlength="10"
+                maxlength="200"
               ></textarea>
             </li>
             <li>
@@ -58,15 +59,27 @@
           <h2>How should we reply?</h2>
           <ul>
             <li>
-              <input type="radio" name="reply" id="call" required />
+              <input type="radio" name="reply" id="call" value="phone" />
               <label for="call-me">Call me</label>
             </li>
             <li>
-              <input type="radio" name="reply" id="send-email" required />
+              <input
+                type="radio"
+                name="reply"
+                id="send-email"
+                value="email"
+                required
+              />
               <label for="send-email">Send me an email</label>
             </li>
             <li>
-              <input type="radio" name="reply" id="do-not-reply" required />
+              <input
+                type="radio"
+                name="reply"
+                id="do-not-reply"
+                value="noreply"
+                required
+              />
               <label for="do-not-reply">Don't reply</label>
             </li>
             <li class="terms">
