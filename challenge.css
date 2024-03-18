@@ -17,3 +17,108 @@
 /* <----------------------------------------> */
 /* <--********** Set Defaults ************--> */
 /* <----------------------------------------> */
+
+body {
+  background-color: rgb(224, 246, 254);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: rgb(50, 50, 50);
+}
+
+header {
+  text-align: center;
+  margin: 2rem;
+}
+
+main {
+  background-color: rgb(238, 251, 255);
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px rgba(185, 189, 191, 0.6);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+h2 {
+  margin: 1.5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  margin: 0.7rem 0;
+}
+
+input,
+textarea,
+select {
+  padding: 0.5rem;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+input:focus,
+label:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid rgb(38, 102, 167);
+}
+
+.contact-info label,
+.contact-info input,
+.contact-info textarea,
+.contact-info select {
+  display: block;
+  width: 100%;
+  font: inherit;
+}
+
+.reply input,
+.reply label {
+  margin-left: 0.3rem;
+}
+
+.terms {
+  margin: 1rem 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid rgb(24, 66, 108);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+button:hover,
+#submit:hover {
+  background-color: rgb(38, 102, 167);
+  color: rgb(224, 246, 254);
+}
+
+#submit {
+  background-color: rgb(24, 66, 108);
+  color: rgb(255, 255, 255);
+}

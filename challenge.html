@@ -3,10 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="challenge.css" />
     <title>HTML Forms Challenge</title>
   </head>
   <body>
-    <h1></h1>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/challenge.html" method="GET">
+        <section class="contact-info">
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" required />
+            </li>
+            <li>
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" name="email" id="email" required />
+            </li>
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                required
+                minlength="8"
+              />
+            </li>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="8"
+                required
+                minlength="10"
+              ></textarea>
+            </li>
+            <li>
+              <label for="where">How did you find us?</label>
+              <select name="where" id="where" required>
+                <option value="web">Web Search</option>
+                <option value="word-of-mouth">Word of mouth</option>
+                <option value="ad">Advertisement</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section class="reply">
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="reply" id="call" required />
+              <label for="call-me">Call me</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="send-email" required />
+              <label for="send-email">Send me an email</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="do-not-reply" required />
+              <label for="do-not-reply">Don't reply</label>
+            </li>
+            <li class="terms">
+              <input type="checkbox" name="terms" id="terms" required />
+              <label for="terms">Accept Terms</label>
+            </li>
+          </ul>
+        </section>
+        <section class="buttons">
+          <button type="reset" id="reset">Clear</button>
+          <button type="submit" id="submit">Submit</button>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
-l
