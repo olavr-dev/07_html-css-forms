@@ -25,7 +25,8 @@ body {
   padding: 8rem;
 }
 
-main {
+main,
+h1 {
   background-color: rgb(65, 65, 65);
   width: 35rem;
   padding: 2rem;
@@ -43,15 +44,20 @@ ul {
 
 h1 {
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: rgb(240, 240, 240);
   text-align: center;
 }
 
 h2 {
-  margin: 3rem 0 1.5rem 0;
+  margin: 2rem 0 1rem 0;
   font-size: 1.5rem;
   font-weight: 500;
   color: rgb(240, 240, 240);
+}
+
+form > section > h2 {
+  margin-top: 0;
 }
 
 input,

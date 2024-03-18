@@ -13,6 +13,7 @@
     <main>
       <form action="/index.html" method="GET">
         <section>
+          <h2>Personal Info</h2>
           <ul>
             <li>
               <label for="user-name">Name</label>
@@ -57,56 +58,48 @@
         <section>
           <h2>How should we verify your account?</h2>
           <ul>
-            <li>
-              <div class="form-inline">
-                <input
-                  type="radio"
-                  name="verify"
-                  id="verify-text-message"
-                  value="text-message"
-                />
-                <label for="verify-text-message">Via text message (SMS)</label>
-              </div>
+            <li class="form-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text-message"
+                value="text-message"
+              />
+              <label for="verify-text-message">Via text message (SMS)</label>
             </li>
-            <li></li>
-            <li>
-              <div class="form-inline">
-                <input
-                  type="radio"
-                  name="verify"
-                  id="verify-phone"
-                  value="phone"
-                />
-                <label for="verify-phone">Via a phone call</label>
-              </div>
+            <li class="form-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phone"
+                value="phone"
+              />
+              <label for="verify-phone">Via a phone call</label>
             </li>
-            <li>
-              <div class="form-inline">
-                <input
-                  type="radio"
-                  name="verify"
-                  id="verify-email"
-                  value="email"
-                />
-                <label for="verify-email">Via email</label>
-              </div>
-            </li>
-            <li class="margin-top">
-              <div class="form-inline">
-                <input type="checkbox" name="via-email" id="via-email" />
-                <label for="via-email">Reply to me via Email.</label>
-              </div>
-            </li>
-            <li>
-              <div class="form-inline">
-                <input type="checkbox" name="via-phone" id="via-phone" />
-                <label for="via-phone">Reply to me via Phone.</label>
-              </div>
+            <li class="form-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="email"
+              />
+              <label for="verify-email">Via email</label>
             </li>
           </ul>
-        </section>
-        <section class="margin-top highlight">
-          <div class="form-inline">
+          <section>
+            <h2>How should we contact you?</h2>
+            <ul>
+              <li class="form-inline margin-top">
+                <input type="checkbox" name="via-email" id="via-email" />
+                <label for="via-email">Reply to me via Email.</label>
+              </li>
+              <li class="form-inline">
+                <input type="checkbox" name="via-phone" id="via-phone" />
+                <label for="via-phone">Reply to me via Phone.</label>
+              </li>
+            </ul>
+          </section>
+          <div class="margin-top highlight form-inline">
             <input type="checkbox" name="agree-terms" id="agree-terms" />
             <label for="agree-terms">Check to agree to our terms.</label>
           </div>
